@@ -21,10 +21,14 @@ const validator = {
     return sum % 10 === 0;
   },
 
-  maskify: function (credtiCardNumber) {
+  maskify: function (creditCardNumber) {
     if (!creditCardNumber) {
-        return '';
+      return '';
     }
+    const lastFourDigits = creditCardNumber.slice(-4);
+    const maskedDigits = creditCardNumber.slice(0, -4).replace(/./g, '#');
+
+    return maskedDigits + lastFourDigits;
   }
 };
 

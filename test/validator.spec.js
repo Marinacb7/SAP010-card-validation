@@ -1,4 +1,4 @@
-// importamos el objeto `validator`, que contiene las funciones `isValid` y `maskify`
+// importamos o objeto `validator`, que contém as funções `isValid` e `maskify`
 import validator from '../src/validator';
 
 describe('validator', () => {
