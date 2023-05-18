@@ -18,7 +18,9 @@ const validator = {
       }
       sum += digit;
     }
-    return sum % 10 === 0;
+    const isValid = sum % 10 === 0;
+    window.alert(`O cartão é ${isValid ? 'válido' : 'inválido'}`);
+    return isValid;
   },
 
   maskify: function (creditCardNumber) {

@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-      <div class="container">
-      <header>Agência MC</header>
-      <main>
-        <button onclick="redirectToValidation()">Seguir para o pagamento</button>
-      </main>
-      </div>
-    <footer>Criada por Agências MC</footer>
+    <h1>Validação de Cartão de Crédito</h1>
+  <form id="creditCardForm">
+    <label for="creditCardNumber">Número do Cartão de Crédito:</label>
+    <input type="text" id="creditCardNumber" required>
+    <button type="submit">Validar</button>
+  </form>
+
+  <div id="validationResult"></div>
+  <div id="maskedCardNumber"></div>  
     <script src="index.js" type="module"></script>
   </body>
 </html>
