@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de cartão de crédito</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Validação de Cartão de Crédito</h1>
+  <form id="creditCardForm">
+    <label for="creditCardNumber">Número do Cartão de Crédito:</label>
+    <input type="text" id="creditCardNumber" required pattern="[0-9]+" maxlength="16">
+    <button type="submit">Validar</button>
+  </form>
+  
+  <div id="validationResult"></div>
+  <div id="maskedCardNumber"></div>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
